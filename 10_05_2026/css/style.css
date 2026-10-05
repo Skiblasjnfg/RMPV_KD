@@ -20,7 +20,11 @@ h2 {
 }
 
 .card {
-
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    border: 2px solid black;
+    margin: 24px 0 24px 0;
 }
 
 h1 {
@@ -35,4 +39,23 @@ nav {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+}
+
+.btn-iesniegt {
+    transition-duration: 0.4s;
+}
+.btn-iesniegt:hover {
+    background-color: chartreuse;
+    color: white;
+}
+
+a:hover {
+  background-color: orangered;
+  font-size: 40px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
 }
