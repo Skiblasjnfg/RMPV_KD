@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="IT mācību centrs">
     <title>IT mācību centrs</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="10_05_2026\css\style.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,6 +14,7 @@
         <a href="#courses">Kursi</a>
         <a href="#about">Par mums</a>
         <a href="#contacts">Kontakti</a>
+        <a href="#signup">Pieteikties</a>
         </nav>
 
     </header>
@@ -22,6 +23,7 @@
         <h1>IT mācību centrs</h1>
         <section id="sakums">
             <h2>Šis ir sākums</h2>
+
         </section>
 
         <section id="courses">
@@ -29,26 +31,25 @@
             <div class="card">
                 <h3>HTML</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, fuga.</p>
-                <img src="10_05_2026\images\HTML.png" alt="HTML attels"><br>
+                <img class="attels" src="10_05_2026\images\HTML.png" alt="HTML attels"><br>
                 <a href="https://en.wikipedia.org/wiki/HTML">Uzzināt vairāk par HTML</a>
             </div>
 
             <div class="card">
                 <h3>CSS</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, minima?</p>
-                <img src="10_05_2026\images\CSS.jpg" alt="CSS attels">
+                <img class="attels" src="10_05_2026\images\CSS.jpg" alt="CSS attels"> <br>
                 <a href="https://en.wikipedia.org/wiki/CSS">Uzzināt vairāk par CSS</a>
             </div>
-
-            <p class="card">
+            <div class="card">
                 <h3>Git</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, quibusdam.</p>
-                <img src="10_05_2026\images\Git.png" alt="Git attels">
+                <img class="attels" src="10_05_2026\images\Git.png" alt="Git attels"> <br>
                 <a href="https://en.wikipedia.org/wiki/Git">Uzzināt vairāk par Git</a>
             </div>
             <div>
                 <h3>Kursu grafiks</h3>
-                <table>
+                <table class="tabula">
                     <thead>
                         <tr>
                             <th>HTML</th>
@@ -87,6 +88,80 @@
 
         <section id="about">
             <h2>Par mums</h2>
+        </section>
+
+        <section id="signup">
+            <h2>Pieteikšanās</h2>
+            <form class="signup-form" method="dialog">
+                <div class="field">
+                    <label for="fname">
+                        Vārds:
+                    </label>
+                    <input type="text"
+                            id="fname"
+                            name="fname"
+                    >
+                    <br><br>
+                    <label for="signup-email">
+                        E-pasts:
+                    </label>
+                    <input type="email"
+                            required
+                            placeholder="example@gmail.com"
+                            name="email"
+                            autocomplete="email"
+                            id="signup-email"
+                    >
+                    <br><br>
+                    <label for="Talrunis">
+                        Tālruņa Nr.:
+                    </label>
+                    <input type="tel"
+                            name="talrunis"
+                            id="talrunis"
+                            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                            placeholder="+371"
+                    >
+                    <br><br>
+                    <label for="course">
+                        Kurss:
+                    </label>
+                    <input type="text"
+                            required
+                            name="course"
+                            id="course"
+                            placeholder="HTML/CSS/Git"
+                    >
+                    <br><br>
+                    <label for="study-type">
+                        Mācību veids:
+                    </label>
+                    <select name="study-type" id="study-type">
+                        <option value="Talmaciba">Tālmācībā</option>
+                        <option value="Klatiene">Klātienē</option>
+                    </select>
+                    <br><br>
+                    <label for="comment">
+                        Komentārs:
+                    </label>
+                    <textarea id="komentars" name="comment" rows="4" cols="50">
+                    Vieta komentāram
+                    </textarea>
+                    <br><br>
+                </div>
+                <div class="agreement">
+                    <label class="checkbox" for="agreement">
+                        <input type="checkbox" name="agreement" id="piekrisana">
+                        Piekrītu iestādes noteikumiem
+                    </label>
+                </div>
+                <div>
+                    <button class="btn-iesniegt" type="submit">
+                        Iesniegt
+                    </button>
+                </div>
+
+            </form>
         </section>
 
         <section id="contacts">

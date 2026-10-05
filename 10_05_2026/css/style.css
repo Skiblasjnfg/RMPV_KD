@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color:aquamarine ;
+    text-align: center;
+}
+
+.tabula {
+    color: brown;
+}
+
+h2 {
+    font-weight: 600;
+}
+.attels {
+    width: 250px;
+}
+
+.card {
+
+}
+
+h1 {
+    font-size: 36px;
+    border: 2px solid purple;
+    border-radius: 50px;
+    background-color: pink;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
